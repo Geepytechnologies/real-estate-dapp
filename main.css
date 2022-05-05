@@ -1,0 +1,158 @@
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body{
+      background-color: #0a1930;
+      /* background-color: #15292B; */
+      /* overflow-x: hidden; */
+  }
+
+a{
+    font-size:13px;
+}
+a:hover{
+    color: #00ffbb;
+}
+.normal-anchor:hover{
+    color: white;
+    text-decoration: none;
+}
+social-icons{
+    color: white;
+}
+p{
+    font-size: 14px;
+}
+.hyper-bold{
+    font-size: 4rem;
+    font-weight: 800;
+}
+.mini-bold{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.title-text{
+    font-size: 20px;
+}
+.mini-p{
+
+    font-size: 13px; }
+.bold-p{
+    font-size: 20px;
+    font-weight: 800;
+}    
+.fade-text{
+    color: cornflowerblue;
+}
+.grey-text{
+    color: darkgrey;
+}
+.smoke-text{
+    color: #EDEADE;
+}
+.green-text{
+    color: #FF9912;
+}
+.red-text{
+    color: red;
+}
+.yellow-text{
+    color: yellow;
+}
+.logo{
+    width: 50%;
+    height: 50%;
+}
+
+.header-text-div{
+    margin-top: 27vh;
+}
+.header-img-div{
+    margin-top: 30vh;
+}
+
+.green-b{
+    color: #FF9912;
+    border: 1px solid #FF9912;
+}
+
+.button-large{
+    padding: 14px 28px;
+    font-size: 13px;
+    transition: all 0.4s ease-in-out;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+.button-large:hover{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid white;
+
+}
+.button-mini{
+    color: black !important;
+    background-color: white;
+    width: 70px;
+    height: 35px;
+    
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid white;
+    border-radius: 35px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-mini:hover{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid white;
+
+}
+.input-form{
+    border-radius: 30px; padding: 10px; border: 1px solid #0a1930;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.otp-input{
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+/* 
+.button-mini{
+    
+    width: 70px;
+    height: 35px;
+    background: var(--postbg);
+    color:rgb(71, 9, 71);
+    color:var(--purpletext);
+    padding: 7px 14px;
+    font-size: 11px;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+    border: 2px solid var(--purpletext);
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+.button-mini:hover{
+    background-color: #3c43ad;
+  /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+  /* color: #fff;
+  transform: translateY(-8px) !important;
+  text-decoration: none; 
+} */ 
+

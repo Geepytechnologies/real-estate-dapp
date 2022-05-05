@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Montserrat:wght@900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css"
+        integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css" integrity="sha256-b88RdwbRJEzRx95nCuuva+hO5ExvXXnpX+78h8DjyOE=" crossorigin="anonymous" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js"
+        integrity="sha256-/7FLTdzP6CfC1VBAj/rsp3Rinuuu9leMRGd354hvk0k=" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'my_app/css/bootstrap.min.css' %}"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <title>Hydra App </title>
+
+
+</head>
+
+<body>
+    <header class="header-img">
+        <nav class="navbar navbar-expand-md navbar-dark main-bg-color fixed-top collapse navbar-collapse">
+            <div class="logo-div ml-4 m-auto">
+                <!-- <img class=" ml-1 logo2" style="width: 60px; height: 60px;" src="images/brain.png"> -->
+                <button style="border: none;  border: 2px solid #3c43ad; background-color: transparent !important;"
+                    class="navbar-toggler my-auto " type="button" data-toggle="collapse" data-target="#navbarToggle"
+                    aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-color"> <i class=" fas fa-bars"></i></span>
+                </button>
+            </div>
+            <div class="container  main-nav-item">
+
+                <div class="collapse navbar-collapse " id="navbarToggle">
+                    <div class="navbar-nav ml-auto pb-4 pr-4 pl-4">
+                        <div  class="col-5 input-group mb-2">
+                            <div  class="  input-group-prepend">
+                              <div style="border-top-left-radius: 25px;" class="input-group-text">
+                                <span><i class="fas fa-search"></i></span></div>
+                            </div>
+                            <input 
+                            style=" border-bottom-right-radius: 25px;"
+                             type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search">
+                          </div>
+                        <a class="nav-item nav-link nav-anchor menu-text m-1 mr-2 " href="home.html">HOME</a>
+                        <a class="nav-item nav-link nav-anchor  menu-text m-1 mr-2 " href="#skills">PROPERTIES</a>
+                        <!-- <a class="nav-item nav-link nav-anchor  menu-text m-1 mr-2 " href="#works"> SEARCH </a> -->
+
+                        <!-- <a class="nav-item nav-link nav-anchor menu-text m-1 mr-2 " href="#contact">LOGIN</a> -->
+                        <a href="login.html" class="nav-item nav-link nav-anchor menu-text m-1 mr-2 button-mini">
+                            LOGIN</a>
+                        <a href="signup.html" class="nav-item nav-link nav-anchor menu-text m-1 mr-2 button-mini">
+                            SIGN UP</a>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- <div style="margin-top: 100px;">
+
+    </div> -->
+
+    <div class="container-fluid">
+        <div style="margin-top: 10%;">
+
+        </div>
+        <div class="row m-auto">
+            <!-- <div class="col-0 col-sm-0 col-md-6 col-lg-6 bg-dark m-auto" 
+            style="background-image: url('images/login-bg2.jpg'); background-position: center;
+             background-repeat: no-repeat; height: 140px;
+            background-size: cover; height: 100vh;">
+
+            </div> -->
+
+            <div style="border-radius: 20px;" class="col-12 col-sm-12 col-md-4 col-lg-4 m-auto bg-dark">
+                <form class="pl-1 pr-1 pt-4 pb-4">
+                    <div  class=" col-10 col-sm-10 col-md-10 col-lg-10 mb-4 m-auto ">
+                        <p class="bold-p smoke-text">Verification Code</p>
+                        <p class="mini-p smoke-text">Please enter the verification code that was sent to <b>+234 8176656544</b></p>
+                      <!-- <label for="exampleInputEmail1" style="color: white;">Email address</label> -->
+                      <div class="mb-4">
+
+                          <input type="number" class="otp-input col-2 p-2 " id="digit1">
+                          <input type="number" class="otp-input col-2 p-2" id="digit2">
+                          <input type="number" class="otp-input col-2 p-2" id="digit3">
+                          <input type="number" class="otp-input col-2 p-2" id="digit4">
+                      </div>
+                    </div> 
+                    
+                    <div class="col-10 col-sm-10 col-md-10 col-lg-10 mt-4 m-auto">
+
+                    <p class="mini-p smoke-text">Did'nt recieve an OTP?
+                         <a style="display: inline;" class="ml-2 normal-anchor" href="#">Resend</a></p> 
+                        <a style="width: 60%;" href="ver-success.html" type="submit" class=" button-large  btn btn-primary">Verify</a>
+                        <a href="signup.html"  class=" button-large ml-1 btn btn-primary">
+                              Go Back</a>
+                        
+                            
+                    </div>
+                  </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- <div style="margin-bottom: 200px;">
+
+    </div> -->
+
+
+
+    <!-- {% block main-content %}
+
+    {% endblock main-content %} -->
+
+
+
+    <script src="https://kit.fontawesome.com/882e7752e2.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"
+        integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
+        integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>        
+    <script src="main.js"></script>
+
+</body>
+
+</html>
