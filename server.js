@@ -23,6 +23,13 @@ app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+/* app.post('/signup', (req, res) => {
+    var username = req.body.username;
+    var email = req.body.email;
+    var password = req.body.password;
+    var confirmpassword = req.body.confirmpwd;
+    console.log(username, email, password, confirmpassword);
+}) */
 
 app.listen(5000, () => {
     console.log('Server is running on port 5000');
