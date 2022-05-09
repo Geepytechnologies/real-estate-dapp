@@ -1,0 +1,27 @@
+{
+  "name": "escrow-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jblaise347/Escrow-system-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jblaise347/Escrow-system-project/issues"
+  },
+  "homepage": "https://github.com/Jblaise347/Escrow-system-project#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}

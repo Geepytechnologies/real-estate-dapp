@@ -67,14 +67,14 @@
                             style=" border-bottom-right-radius: 25px;"
                              type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search">
                           </div>
-                        <a class="nav-item nav-link nav-anchor menu-text m-1 mr-2 " href="home.html">HOME</a>
+                        <a class="nav-item nav-link nav-anchor menu-text m-1 mr-2 " href="/">HOME</a>
                         <a class="nav-item nav-link nav-anchor  menu-text m-1 mr-2 " href="#skills">PROPERTIES</a>
                         <!-- <a class="nav-item nav-link nav-anchor  menu-text m-1 mr-2 " href="#works"> SEARCH </a> -->
 
                         <!-- <a class="nav-item nav-link nav-anchor menu-text m-1 mr-2 " href="#contact">LOGIN</a> -->
-                        <a href="login.html" class="nav-item nav-link nav-anchor menu-text m-1 mr-2 button-mini">
+                        <a href="/login" class="nav-item nav-link nav-anchor menu-text m-1 mr-2 button-mini">
                             LOGIN</a>
-                        <a href="signup.html" class="nav-item nav-link nav-anchor menu-text m-1 mr-2 button-mini">
+                        <a href="/signup" class="nav-item nav-link nav-anchor menu-text m-1 mr-2 button-mini">
                             SIGN UP</a>
 
 
@@ -102,45 +102,29 @@
 
             </div> -->
 
-            <div style="border-radius: 20px;" class="col-12 col-sm-12 col-md-4 col-lg-4 m-auto bg-dark mb-4">
+            <div style="border-radius: 20px;" class="col-12 col-sm-12 col-md-4 col-lg-4 m-auto bg-dark">
                 <form class="pl-1 pr-1 pt-4 pb-4">
                     <div  class=" col-10 col-sm-10 col-md-10 col-lg-10 mb-4 m-auto ">
-                        <!-- <label for="InputUsername" style="color: white;">Username</label> -->
-                        <input type="email" class="input-form form-control mt-4 mb-4" id="InputUsername"  placeholder="Enter Username">
-                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                      </div>
-                    <div  class=" col-10 col-sm-10 col-md-10 col-lg-10 mb-4 m-auto ">
-                      <!-- <label for="InputEmail" style="color: white;">Email address</label> -->
-                      <input type="email" class="input-form form-control mb-4" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address">
-                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                    </div>
+                        <p class="bold-p smoke-text">Verification Code</p>
+                        <p class="mini-p smoke-text">Please enter the verification code that was sent to <b>+234 8176656544</b></p>
+                      <!-- <label for="exampleInputEmail1" style="color: white;">Email address</label> -->
+                      <div class="mb-4">
 
-                    <div class=" col-10 col-sm-10 col-md-10 col-lg-10 mt-4 m-auto">
-                        <!-- <label style="color: white;" for="InputPassword1">Password</label> -->
-                        <input type="password" class="input-form form-control mb-4" id="InputPassword1" placeholder="Password">
-                        
+                          <input type="number" class="otp-input col-2 p-2 " id="digit1">
+                          <input type="number" class="otp-input col-2 p-2" id="digit2">
+                          <input type="number" class="otp-input col-2 p-2" id="digit3">
+                          <input type="number" class="otp-input col-2 p-2" id="digit4">
                       </div>
-                    <div class=" col-10 col-sm-10 col-md-10 col-lg-10 mt-4 m-auto">
-                      <!-- <label style="color: white;" for="InputPassword2">Password</label> -->
-                      <input type="password" class="input-form form-control mb-4" id="InputPassword2" placeholder="Confirm Password">
-                      
-                    </div>
+                    </div> 
                     
                     <div class="col-10 col-sm-10 col-md-10 col-lg-10 mt-4 m-auto">
 
+                    <p class="mini-p smoke-text">Did'nt recieve an OTP?
+                         <a style="display: inline;" class="ml-2 normal-anchor" href="#">Resend</a></p> 
+                        <a style="width: 60%;" href="/success" type="submit" class=" button-large  btn btn-primary">Verify</a>
+                        <a href="/signup"  class=" button-large ml-1 btn btn-primary">
+                              Go Back</a>
                         
-                        <a href="otp-screen.html" type="submit" class=" button-large  btn btn-primary">Sign Up</a>
-                        <a href="#"  class=" button-large ml-1 btn btn-primary">
-                            <span ><i style="font-size: 20px;" class="fab fa-google"></i> </span>  Sign Up with Google</a>
-                        
-                            <div class="mt-4">
-                                <!-- <a class="m-auto normal-anchor mt-4" href="#">Forgot Password?</a>   -->
-      
-                            </div>
-                        
-                            <div class="" style="margin-top: 40px;">
-                                <p class="smoke-text" style="display: inline;">Already have an account?</p> <a class="ml-2 normal-anchor" style="display: inline;" href="#"> Login</a>
-                            </div>
                             
                     </div>
                   </form>
