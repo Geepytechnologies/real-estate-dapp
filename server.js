@@ -3,6 +3,10 @@ if (process.env.NODE_ENV !== 'production'){
 }
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+
+
 
 // routes
 const index = require('./routes/index');
@@ -12,6 +16,13 @@ const properties = require('./routes/properties');
 const success = require('./routes/ver-success');
 const otp = require('./routes/otp-screen');
 
+
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
+app.use(express.static('public'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 // routes definition
 app.use('/', index);
 app.use('/login', login);
@@ -20,20 +31,19 @@ app.use('/properties', properties);
 app.use('/success', success);
 app.use('/otp', otp);
 
-app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views');
-app.use(express.static('public'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// connecting to mongoose
+mongoose.connect(process.env.DATABASE_URL, {
+    useNewUrlParser: true,
+})
+const db = mongoose.connection;
+db.on('error', error => console.error(error))
+db.once('open', () => console.log('connected to mongoose'));
 
 /* app.post('/signup', (req, res) => {
-    var username = req.body.username;
-    var email = req.body.email;
-    var password = req.body.password;
-    var confirmpassword = req.body.confirmpwd;
-    console.log(username, email, password, confirmpassword);
-}) */
-
+    const { email, password } = req.body;
+    console.log(email, password);
+})
+ */
 app.listen(process.env.PORT || 5000, () => {
     console.log('Server is running on port 5000');
 });
